@@ -1,0 +1,226 @@
+/* ===== GENERAL ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: url("imagenes/fondo.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+/* ===== HEADER ===== */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("imagenes/fondo.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: #004a99;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Menu links */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #ffcc00;
+}
+
+/* ===== MENU HAMBURGUESA ===== */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  position: relative;
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+  display: block;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+  left: 0;
+}
+
+.menu-icon::before {
+  top: -8px;
+}
+
+.menu-icon::after {
+  top: 8px;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  background: rgba(255, 255, 255, 0.92);
+  margin: 30px auto;
+  padding: 40px;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.section h2 {
+  text-align: center;
+  color: #004a99;
+  margin-bottom: 20px;
+}
+
+/* ===== CARDS ===== */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  width: 260px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* ===== FORM ===== */
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border: 2px solid #004a99;
+  box-shadow: 0 0 6px rgba(0,74,153,0.4);
+}
+
+.form-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  background-color: #004a99;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff6600;
+}
+
+.reset {
+  background-color: #777;
+}
+
+.reset:hover {
+  background-color: #444;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.social a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social img {
+  filter: invert(1);
+  transition: transform 0.3s ease;
+}
+
+.social img:hover {
+  transform: scale(1.2);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background: #004a99;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+}
