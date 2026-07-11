@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ===== GENERAL ===== */
 body {
   font-family: Arial, sans-serif;
@@ -424,3 +425,431 @@ img {
   font-weight: bold;
   cursor: pointer;
 }
+=======
+/* ===== GENERAL ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+  .portafolio-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ===== HEADER ===== */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("imagenes/fondo.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: #004a99;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Menu links */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #ffcc00;
+}
+
+/* ===== MENU HAMBURGUESA ===== */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  position: relative;
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+  display: block;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+  left: 0;
+}
+
+.menu-icon::before {
+  top: -8px;
+}
+
+.menu-icon::after {
+  top: 8px;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  background: rgba(255, 255, 255, 0.92);
+  margin: 30px auto;
+  padding: 40px;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.section h2 {
+  text-align: center;
+  color: #004a99;
+  margin-bottom: 20px;
+}
+
+/* ===== CARDS ===== */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  width: 260px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* ===== FORM ===== */
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border: 2px solid #004a99;
+  box-shadow: 0 0 6px rgba(0,74,153,0.4);
+}
+
+.form-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  background-color: #004a99;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff6600;
+}
+
+.reset {
+  background-color: #777;
+}
+
+.reset:hover {
+  background-color: #444;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.social a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social img {
+  filter: invert(1);
+  transition: transform 0.3s ease;
+}
+
+.social img:hover {
+  transform: scale(1.2);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background: #004a99;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+}
+/* ===== BOTÓN HERO ===== */
+.btn-hero {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  background-color: #ff6600;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-hero:hover {
+  background-color: #ffcc00;
+  color: #004a99;
+  transform: scale(1.05);
+}
+
+/* ===== SOCIAL ICONS ===== */
+.social {
+  margin-top: 15px;
+}
+
+.social a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social img {
+  filter: invert(1);
+  transition: transform 0.3s ease;
+}
+
+.social img:hover {
+  transform: scale(1.2);
+}
+/* ===== VENTAJAS ===== */
+.ventajas-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.ventaja {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.ventaja:hover {
+  transform: translateY(-6px);
+}
+
+.ventaja h3 {
+  color: #004a99;
+  margin-bottom: 10px;
+}
+
+/* ===== CONFIANZA ===== */
+.confianza-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  text-align: center;
+}
+
+.dato {
+  background: #004a99;
+  color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 180px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.dato:hover {
+  transform: scale(1.05);
+  background-color: #ff6600;
+}
+
+.dato h3 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.dato p {
+  margin: 8px 0 0;
+  font-size: 15px;
+}
+/* ===== BOTÓN FLOTANTE WHATSAPP ===== */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 35px;
+  margin-top: 12px;
+  filter: invert(1);
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+/* ===== BOTÓN FLOTANTE COTIZACIÓN ===== */
+.cotiza-float {
+  position: fixed;
+  bottom: 90px; /* un poco arriba del botón de WhatsApp */
+  right: 20px;
+  background-color: #ff6600;
+  color: #fff;
+  font-weight: bold;
+  padding: 14px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cotiza-float:hover {
+  background-color: #004a99;
+  transform: scale(1.05);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.portafolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.portafolio-container img {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.portafolio-container img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== LIGHTBOX ===== */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+>>>>>>> 865638d843bd54c018f9cb3dc0c262bb8bfcd31e
