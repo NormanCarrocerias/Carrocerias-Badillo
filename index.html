@@ -30,6 +30,30 @@
     </div>
   </section>
 
+  <!-- SECCIÓN PORTAFOLIO AUTOMÁTICO -->
+<section id="portafolio" class="section">
+  <h2>Trabajos Realizados</h2>
+  <div id="cloudinary-gallery"></div>
+</section>
+
+<!-- SCRIPT DE CLOUDINARY -->
+<script src="https://media-library.cloudinary.com/global/all.js"></script>
+<script>
+  const gallery = cloudinary.createMediaLibrary(
+    {
+      cloud_name: "ektsdkby",        // tu cloud_name confirmado
+      api_key: "TU_API_KEY",         // tu API key desde el dashboard
+      username: "TU_EMAIL"           // tu correo de Cloudinary
+    },
+    {
+      insert_transformation: true,
+      folder: "portafolio"           // nombre de la carpeta que acabas de crear
+    },
+    document.getElementById("cloudinary-gallery")
+  );
+</script>
+
+
   <!-- SECCIÓN SERVICIOS -->
   <section id="servicios" class="section">
     <h2>Servicios</h2>
@@ -56,6 +80,29 @@
       <img src="imagenes/WI3.jpeg" alt="Trabajo 3">
     </div>
   </section>
+  <!-- SECCIÓN PORTAFOLIO AUTOMÁTICO -->
+<section id="portafolio" class="section">
+  <h2>Trabajos Realizados</h2>
+  <!-- Contenedor de la galería -->
+  <div id="cloudinary-gallery"></div>
+</section>
+
+<!-- SCRIPT DE CLOUDINARY -->
+<script src="https://media-library.cloudinary.com/global/all.js"></script>
+<script>
+  const gallery = cloudinary.createMediaLibrary(
+    {
+      cloud_name: "ektsdkby",   // tu nombre de Cloudinary
+      api_key: "483911177965494",         // tu API key
+      username: "ja.juarez011@ebc.edu.mx"           // tu correo de Cloudinary
+    },
+    {
+      insert_transformation: true,
+      folder: "portafolio"           // nombre de la carpeta que creaste
+    },
+    document.getElementById("cloudinary-gallery")
+  );
+</script>
 
   <!-- SECCIÓN TESTIMONIOS -->
   <section id="testimonios" class="section">
