@@ -1,3 +1,4 @@
+/* ===== BODY ===== */
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
@@ -6,14 +7,18 @@ body {
   color: #333;
 }
 
+/* ===== HERO ===== */
 .hero {
-  background: url("../imagenes/fondo.png") no-repeat center center fixed;
+  background: rgba(0, 0, 0, 0.6); /* oscurece el fondo para resaltar texto */
+  padding: 100px 20px;
+  text-align: center;
 }
 
-  background-size: cover;
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
   color: #fff;
-  padding: 80px 20px;
-  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
 }
 
 /* ===== NAVBAR ===== */
@@ -37,7 +42,6 @@ body {
   font-weight: bold;
 }
 
-/* Menu links */
 .nav-menu {
   list-style: none;
   display: flex;
@@ -93,7 +97,7 @@ body {
 
 /* ===== SECTIONS ===== */
 .section {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.92);
   margin: 30px auto;
   padding: 40px;
   max-width: 1000px;
@@ -105,6 +109,19 @@ body {
   text-align: center;
   color: #004a99;
   margin-bottom: 20px;
+}
+
+/* ===== PORTFOLIO GRID ===== */
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.portfolio img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 /* ===== CARDS ===== */
@@ -202,6 +219,51 @@ button:hover {
 
 .social img:hover {
   transform: scale(1.2);
+}
+
+/* ===== BOTONES FLOTANTES ===== */
+.btn-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366; /* verde WhatsApp */
+  color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 2000;
+}
+
+.btn-float:hover {
+  transform: scale(1.1);
+}
+
+.btn-cotizacion {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background: #ff6600; /* naranja cotización */
+  color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 2000;
+}
+
+.btn-cotizacion:hover {
+  transform: scale(1.1);
 }
 
 /* ===== RESPONSIVE ===== */
