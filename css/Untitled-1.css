@@ -8,23 +8,62 @@ body {
 }
 
 /* ===== HERO ===== */
+.hero {
+  background: url("imagenes/taller.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  transition: background 1s ease-in-out;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid #fff;
+  white-space: nowrap;
+  animation: typing 3s steps(30, end), blink .75s step-end infinite;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: #fff }
+}
+
+.slogan {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffcc00;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  margin-top: 15px;
+}
+
 .hero p {
   font-size: 20px;
   color: #fff;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
   margin-top: 10px;
-}
-
-.social img {
-  width: 28px;
-  height: 28px;
-  filter: invert(1);
-  transition: transform 0.3s ease;
-}
-
-.section {
-  border-radius: 16px;
-  background: rgba(255,255,255,0.95);
 }
 
 /* ===== NAVBAR ===== */
@@ -93,13 +132,8 @@ body {
   left: 0;
 }
 
-.menu-icon::before {
-  top: -8px;
-}
-
-.menu-icon::after {
-  top: 8px;
-}
+.menu-icon::before { top: -8px; }
+.menu-icon::after { top: 8px; }
 
 /* ===== SECTIONS ===== */
 .section {
@@ -160,213 +194,6 @@ body {
 }
 
 /* ===== FORM ===== */
-.form input,
-.form textarea {
-  width: 100%;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 15px;
-  transition: border 0.3s ease, box-shadow 0.3s ease;
-}
-
-.form input:focus,
-.form textarea:focus {
-  outline: none;
-  border: 2px solid #004a99;
-  box-shadow: 0 0 6px rgba(0,74,153,0.4);
-}
-
-.form-buttons {
-  display: flex;
-  gap: 15px;
-}
-
-button {
-  background-color: #004a99;
-  color: #fff;
-  border: none;
-  padding: 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: 0.3s;
-}
-
-button:hover {
-  background-color: #ff6600;
-}
-
-.reset {
-  background-color: #777;
-}
-
-.reset:hover {
-  background-color: #444;
-}
-
-/* ===== FOOTER ===== */
-.footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-.social a {
-  margin: 0 10px;
-  display: inline-block;
-}
-
-.social img {
-  filter: invert(1);
-  transition: transform 0.3s ease;
-}
-
-.social img:hover {
-  transform: scale(1.2);
-}
-
-/* ===== BOTONES FLOTANTES ===== */
-.btn-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366; /* verde WhatsApp */
-  color: #fff;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  z-index: 2000;
-}
-
-.btn-float:hover {
-  transform: scale(1.1);
-}
-
-.btn-cotizacion {
-  position: fixed;
-  bottom: 90px;
-  right: 20px;
-  background: #ff6600; /* naranja cotización */
-  color: #fff;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  z-index: 2000;
-}
-
-.btn-cotizacion:hover {
-  transform: scale(1.1);
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-  .menu-btn {
-    display: block;
-  }
-
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    background: #004a99;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 10px;
-  }
-
-  .nav-menu.show {
-    display: flex;
-  }
-}
-.hero {
-  background: url("imagenes/taller.jpg") no-repeat center center/cover;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-  position: relative;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.5); /* oscurece la imagen para resaltar texto */
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-}
-
-.typewriter {
-  overflow: hidden;
-  border-right: .15em solid #fff;
-  white-space: nowrap;
-  animation: typing 3s steps(30, end), blink .75s step-end infinite;
-  font-size: 48px;
-  font-weight: bold;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink {
-  from, to { border-color: transparent }
-  50% { border-color: #fff }
-}
-
-.slogan {
-  font-size: 22px;
-  font-weight: 600;
-  color: #ffcc00;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-  margin-top: 15px;
-}
-.hero {
-  transition: background 1s ease-in-out;
-}
-.hero {
-  transition: background 1s ease-in-out;
-}
-.btn-whatsapp, .btn-cotizacion {
-  position: fixed;
-  bottom: 20px;
-  z-index: 1000;
-}
-
-.btn-whatsapp {
-  right: 20px;
-}
-
-.btn-cotizacion {
-  right: 80px; /* separa el botón de cotización del de WhatsApp */
-}
-
-.social-icons {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-/* FORMULARIO DE CONTACTO */
 .form {
   max-width: 500px;
   margin: 30px auto;
@@ -380,41 +207,4 @@ button:hover {
 }
 
 .form input,
-.form textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-.form input:focus,
-.form textarea:focus {
-  border-color: #0077cc;
-  box-shadow: 0 0 6px rgba(0,119,204,0.4);
-  outline: none;
-}
-
-.form button {
-  padding: 12px;
-  background: #0077cc;
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.form button:hover {
-  background: #005fa3;
-}
-
-.social-icons img {
-  transition: transform 0.3s;
-}
-
-.social-icons img:hover {
-  transform: scale(1.2);
-}
+.form textarea
