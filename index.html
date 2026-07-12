@@ -101,13 +101,26 @@
   </footer>
 
   <!-- BOTONES FLOTANTES -->
-  <a href="https://wa.me/5215555555555" class="btn-float" target="_blank">
+  <a href="https://wa.me/5951084104" class="btn-float" target="_blank">
     <img src="imagenes/whatsapp.png" alt="WhatsApp" width="30">
   </a>
 
   <a href="#contacto" class="btn-cotizacion">
     <img src="imagenes/cotizacion.png" alt="Cotización" width="30">
   </a>
+<script>
+  // Lista de fondos disponibles
+  const fondos = [
+    "imagenes/taller.jpg",
+    "imagenes/fondo-minimalista.jpg"
+  ];
+
+  // Selecciona uno al azar cada vez que se recarga la página
+  const fondoAleatorio = fondos[Math.floor(Math.random() * fondos.length)];
+
+  // Aplica el fondo al hero
+  document.querySelector(".hero").style.background = `url(${fondoAleatorio}) no-repeat center center/cover`;
+</script>
 
 </body>
 </html>
