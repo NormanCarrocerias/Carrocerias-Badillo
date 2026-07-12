@@ -91,24 +91,43 @@
     </form>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>&copy; 2026 Carrocerías Norman Badillo</p>
-    <div class="social">
-      <a href="#"><img src="imagenes/facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="imagenes/instagram.png" alt="Instagram"></a>
-    </div>
-  </footer>
+<!-- FOOTER -->
+<footer>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/TU_PAGINA" target="_blank">
+      <img src="imagenes/facebook.png" alt="Facebook" width="30">
+    </a>
+    <a href="https://www.instagram.com/TU_USUARIO" target="_blank">
+      <img src="imagenes/instagram.png" alt="Instagram" width="30">
+    </a>
+    <a href="https://www.youtube.com/TU_CANAL" target="_blank">
+      <img src="imagenes/youtube.png" alt="YouTube" width="30">
+    </a>
+  </div>
+  <p>© 2026 Carrocerías Norman Badillo</p>
+</footer>
 
-  <!-- BOTONES FLOTANTES -->
-  <a href="https://wa.me/5951084104" class="btn-float" target="_blank">
-    <img src="imagenes/whatsapp.png" alt="WhatsApp" width="30">
-  </a>
+<!-- FORMULARIO DE CONTACTO (Formspree) -->
+<section id="contacto">
+  <h2>Contáctanos</h2>
+  <form class="form" action="https://formspree.io/f/xykrgjzk" method="POST">
+    <input type="text" name="nombre" placeholder="Tu nombre" required>
+    <input type="email" name="email" placeholder="Tu correo" required>
+    <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
 
-  <a href="#contacto" class="btn-cotizacion">
-    <img src="imagenes/cotizacion.png" alt="Cotización" width="30">
-  </a>
-<script>
+<!-- BOTÓN DE COTIZACIÓN -->
+<a href="#contacto" class="btn-cotizacion">
+  <img src="imagenes/cotizacion.png" alt="Cotización" width="50">
+</a>
+
+<!-- BOTÓN DE WHATSAPP BUSINESS -->
+<a href="https://wa.me/5215512345678" class="btn-whatsapp" target="_blank">
+  <img src="imagenes/whatsapp.png" alt="WhatsApp" width="50">
+</a>
+
   // Lista de fondos disponibles
   const fondos = [
     "imagenes/taller.jpg",
