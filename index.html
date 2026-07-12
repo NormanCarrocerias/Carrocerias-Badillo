@@ -22,14 +22,13 @@
     </div>
   </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-content">
-    <h1 class="typewriter">Carrocerías Norman Badillo</h1>
-    <p class="slogan">Tu auto en manos expertas</p>
-  </div>
-</section>
-
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="typewriter">Carrocerías Norman Badillo</h1>
+      <p class="slogan">Tu auto en manos expertas</p>
+    </div>
+  </section>
 
   <!-- SECCIÓN SERVICIOS -->
   <section id="servicios" class="section">
@@ -79,11 +78,11 @@
 
   <!-- SECCIÓN CONTACTO -->
   <section id="contacto" class="section">
-    <h2>Contacto</h2>
-    <form class="form">
-      <input type="text" placeholder="Nombre">
-      <input type="email" placeholder="Correo">
-      <textarea placeholder="Mensaje"></textarea>
+    <h2>Contáctanos</h2>
+    <form class="form" action="https://formspree.io/f/xykrgjzk" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
       <div class="form-buttons">
         <button type="submit">Enviar</button>
         <button type="reset" class="reset">Limpiar</button>
@@ -91,55 +90,42 @@
     </form>
   </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="social-icons">
-    <a href="https://www.facebook.com/TU_PAGINA" target="_blank">
-      <img src="imagenes/facebook.png" alt="Facebook" width="30">
-    </a>
-    <a href="https://www.instagram.com/TU_USUARIO" target="_blank">
-      <img src="imagenes/instagram.png" alt="Instagram" width="30">
-    </a>
-    <a href="https://www.youtube.com/TU_CANAL" target="_blank">
-      <img src="imagenes/youtube.png" alt="YouTube" width="30">
-    </a>
-  </div>
-  <p>© 2026 Carrocerías Norman Badillo</p>
-</footer>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/TU_PAGINA" target="_blank">
+        <img src="imagenes/facebook.png" alt="Facebook" width="30">
+      </a>
+      <a href="https://www.instagram.com/TU_USUARIO" target="_blank">
+        <img src="imagenes/instagram.png" alt="Instagram" width="30">
+      </a>
+      <a href="https://www.youtube.com/TU_CANAL" target="_blank">
+        <img src="imagenes/youtube.png" alt="YouTube" width="30">
+      </a>
+    </div>
+    <p>© 2026 Carrocerías Norman Badillo</p>
+  </footer>
 
-<!-- FORMULARIO DE CONTACTO (Formspree) -->
-<section id="contacto">
-  <h2>Contáctanos</h2>
-  <form class="form" action="https://formspree.io/f/xykrgjzk" method="POST">
-    <input type="text" name="nombre" placeholder="Tu nombre" required>
-    <input type="email" name="email" placeholder="Tu correo" required>
-    <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-    <button type="submit">Enviar</button>
-  </form>
-</section>
+  <!-- BOTÓN DE COTIZACIÓN -->
+  <a href="#contacto" class="btn-cotizacion">
+    <img src="imagenes/cotizacion.png" alt="Cotización" width="50">
+  </a>
 
-<!-- BOTÓN DE COTIZACIÓN -->
-<a href="#contacto" class="btn-cotizacion">
-  <img src="imagenes/cotizacion.png" alt="Cotización" width="50">
-</a>
+  <!-- BOTÓN DE WHATSAPP BUSINESS -->
+  <a href="https://wa.me/5215512345678" class="btn-whatsapp" target="_blank">
+    <img src="imagenes/whatsapp.png" alt="WhatsApp" width="50">
+  </a>
 
-<!-- BOTÓN DE WHATSAPP BUSINESS -->
-<a href="https://wa.me/5215512345678" class="btn-whatsapp" target="_blank">
-  <img src="imagenes/whatsapp.png" alt="WhatsApp" width="50">
-</a>
-
-  // Lista de fondos disponibles
-  const fondos = [
-    "imagenes/taller.jpg",
-    "imagenes/fondo-minimalista.jpg"
-  ];
-
-  // Selecciona uno al azar cada vez que se recarga la página
-  const fondoAleatorio = fondos[Math.floor(Math.random() * fondos.length)];
-
-  // Aplica el fondo al hero
-  document.querySelector(".hero").style.background = `url(${fondoAleatorio}) no-repeat center center/cover`;
-</script>
+  <!-- SCRIPT PARA FONDO ALEATORIO -->
+  <script>
+    const fondos = [
+      "imagenes/taller.jpg",
+      "imagenes/fondo-minimalista.jpg"
+    ];
+    const fondoAleatorio = fondos[Math.floor(Math.random() * fondos.length)];
+    document.querySelector(".hero").style.background = 
+      `url(${fondoAleatorio}) no-repeat center center/cover`;
+  </script>
 
 </body>
 </html>
