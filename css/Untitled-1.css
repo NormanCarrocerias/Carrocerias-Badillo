@@ -211,6 +211,38 @@ body {
   transform: scale(1.05);
 }
 
+#testimonios {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#testimonios h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.testimonio {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.testimonio p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.testimonio h4 {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #555;
+}
 
 /* ===== FORM ===== */
 .form {
