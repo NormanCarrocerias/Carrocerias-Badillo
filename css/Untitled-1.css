@@ -346,3 +346,31 @@ button:hover {
 .hero {
   transition: background 1s ease-in-out;
 }
+.btn-whatsapp, .btn-cotizacion {
+  position: fixed;
+  bottom: 20px;
+  z-index: 1000;
+}
+
+.btn-whatsapp {
+  right: 20px;
+}
+
+.btn-cotizacion {
+  right: 80px; /* separa el botón de cotización del de WhatsApp */
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.social-icons img {
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
