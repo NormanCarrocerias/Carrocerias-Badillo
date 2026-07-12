@@ -1,16 +1,14 @@
-/* ===== GENERAL ===== */
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: url("imagenes/fondo.jpg") no-repeat center center fixed;
+  background: url("../imagenes/fondo.jpg") no-repeat center center fixed;
   background-size: cover;
   color: #333;
 }
 
-/* ===== HEADER ===== */
 .hero {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url("imagenes/fondo.jpg") no-repeat center center;
+    url("../imagenes/fondo.jpg") no-repeat center center;
   background-size: cover;
   color: #fff;
   padding: 80px 20px;
