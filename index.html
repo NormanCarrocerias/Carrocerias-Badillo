@@ -1,80 +1,52 @@
-/* ===== GENERAL ===== */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrocerías Badillo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-/* ===== HERO ===== */
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("imagenes/fondo.png") no-repeat center center;
-  background-size: cover;
-  color: #fff;
-  padding: 80px 20px;
-  text-align: center;
-}
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <h2>Carrocerías Badillo</h2>
+  </div>
 
-/* ===== TYPEWRITER EFFECT ===== */
-.typewriter {
-  display: inline-block;
-  overflow: hidden;
-  border-right: 3px solid #ffcc00; /* cursor */
-  white-space: nowrap;
-  animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #ffcc00;
-}
+  <!-- HERO -->
+  <section class="hero">
+    <h1 class="typewriter">Bienvenido a Carrocerías Badillo</h1>
+  </section>
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
+  <!-- SECTIONS -->
+  <section class="section">
+    <h2>Servicios</h2>
+    <div class="card">Carrocerías personalizadas</div>
+    <div class="card">Reparaciones</div>
+    <div class="card">Pintura</div>
+  </section>
 
-@keyframes blink {
-  from, to { border-color: transparent }
-  50% { border-color: #ffcc00; }
-}
+  <section class="section">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Nombre"><br><br>
+      <input type="email" placeholder="Correo"><br><br>
+      <textarea placeholder="Mensaje"></textarea><br><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
-/* ===== NAVBAR ===== */
-.navbar {
-  background-color: #004a99;
-  padding: 15px 20px;
-  position: sticky;
-  top: 0;
-  color: #fff;
-}
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Carrocerías Badillo</p>
+    <div class="social-icons">
+      <a href="#"><img src="imagenes/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="imagenes/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="imagenes/twitter.png" alt="Twitter"></a>
+    </div>
+  </footer>
 
-/* ===== SECTIONS ===== */
-.section {
-  padding: 40px 20px;
-  text-align: center;
-}
+  <script src="script.js"></script>
+</body>
+</html>
 
-.card {
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin: 15px;
-  border-radius: 8px;
-  display: inline-block;
-  width: 250px;
-}
-
-/* ===== FOOTER ===== */
-footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-footer .social-icons {
-  margin-top: 10px;
-}
-
-footer .social-icons img {
-  width: 30px;
-  margin: 0 8px;
-  vertical-align: middle;
 }
