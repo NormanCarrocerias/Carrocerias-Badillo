@@ -30,30 +30,6 @@
     </div>
   </section>
 
-  <!-- SECCIÓN PORTAFOLIO AUTOMÁTICO -->
-<section id="portafolio" class="section">
-  <h2>Trabajos Realizados</h2>
-  <div id="cloudinary-gallery"></div>
-</section>
-
-<!-- SCRIPT DE CLOUDINARY -->
-<script src="https://media-library.cloudinary.com/global/all.js"></script>
-<script>
-  const gallery = cloudinary.createMediaLibrary(
-    {
-      cloud_name: "ektsdkby",        // tu cloud_name confirmado
-      api_key: "TU_API_KEY",         // tu API key desde el dashboard
-      username: "TU_EMAIL"           // tu correo de Cloudinary
-    },
-    {
-      insert_transformation: true,
-      folder: "portafolio"           // nombre de la carpeta que creaste
-    },
-    document.getElementById("cloudinary-gallery")
-  );
-</script>
-
-
   <!-- SECCIÓN SERVICIOS -->
   <section id="servicios" class="section">
     <h2>Servicios</h2>
@@ -80,50 +56,23 @@
       <img src="imagenes/WI3.jpeg" alt="Trabajo 3">
     </div>
   </section>
-  <!-- SECCIÓN PORTAFOLIO AUTOMÁTICO -->
-<section id="portafolio" class="section">
-  <h2>Trabajos Realizados</h2>
-  <!-- Contenedor de la galería -->
-  <div id="cloudinary-gallery"></div>
-</section>
-
-<!-- SCRIPT DE CLOUDINARY -->
-<script src="https://media-library.cloudinary.com/global/all.js"></script>
-<script>
-  const gallery = cloudinary.createMediaLibrary(
-    {
-      cloud_name: "ektsdkby",   // tu nombre de Cloudinary
-      api_key: "483911177965494",         // tu API key
-      username: "ja.juarez011@ebc.edu.mx"           // tu correo de Cloudinary
-    },
-    {
-      insert_transformation: true,
-      folder: "portafolio"           // nombre de la carpeta que creaste
-    },
-    document.getElementById("cloudinary-gallery")
-  );
-</script>
 
   <!-- SECCIÓN TESTIMONIOS -->
- <section id="testimonios">
-  <h2>Testimonios</h2>
-
-  <div class="testimonio">
-    <p>"El servicio fue excelente, mi carro quedó como nuevo."</p>
-    <h4>- Juan Pérez</h4>
-  </div>
-
-  <div class="testimonio">
-    <p>"Muy profesionales y atentos, recomiendo totalmente sus carrocerías."</p>
-    <h4>- María López</h4>
-  </div>
-
-  <div class="testimonio">
-    <p>"La calidad del trabajo es impecable, volveré sin duda."</p>
-    <h4>- Carlos Ramírez</h4>
-  </div>
-</section>
-
+  <section id="testimonios">
+    <h2>Testimonios</h2>
+    <div class="testimonio">
+      <p>"El servicio fue excelente, mi carro quedó como nuevo."</p>
+      <h4>- Juan Pérez</h4>
+    </div>
+    <div class="testimonio">
+      <p>"Muy profesionales y atentos, recomiendo totalmente sus carrocerías."</p>
+      <h4>- María López</h4>
+    </div>
+    <div class="testimonio">
+      <p>"La calidad del trabajo es impecable, volveré sin duda."</p>
+      <h4>- Carlos Ramírez</h4>
+    </div>
+  </section>
 
   <!-- SECCIÓN CONTACTO -->
   <section id="contacto" class="section">
@@ -139,25 +88,34 @@
     </form>
   </section>
 
-<!-- Footer BR Carrocerías -->
-<footer id="br-footer" style="background-color:#222; color:#fff; padding:30px; text-align:center; font-family:Arial, sans-serif;">
-  <div style="max-width:800px; margin:auto;">
+  <!-- FOOTER -->
+  <footer class="footer" style="background-color:#222; color:#fff; padding:30px; text-align:center; font-family:Arial, sans-serif;">
+    <div class="social-icons" style="margin-bottom:20px;">
+      <a href="https://www.facebook.com/TU_PAGINA" target="_blank">
+        <img src="imagenes/facebook.png" alt="Facebook" width="30">
+      </a>
+      <a href="https://www.instagram.com/TU_USUARIO" target="_blank">
+        <img src="imagenes/instagram.png" alt="Instagram" width="30">
+      </a>
+      <a href="https://www.youtube.com/TU_CANAL" target="_blank">
+        <img src="imagenes/youtube.png" alt="YouTube" width="30">
+      </a>
+    </div>
     <h2 style="margin-bottom:10px;">
       BR Carrocerías 
-      <img src="images/logo.png" alt="Logo BR Carrocerías" style="height:40px; vertical-align:middle; margin-left:10px;">
+      <img src="imagenes/logo.png" alt="Logo BR Carrocerías" style="height:40px; vertical-align:middle; margin-left:10px;">
     </h2>
-    <p style="margin:8px 0;">Fabricación y reparación de todo tipo de carrocerías en general</p>
-    <p style="margin:8px 0;">Carretera federal México-Cuautla kilómetro 79<br>
+    <p>Fabricación y reparación de todo tipo de carrocerías en general</p>
+    <p>📍 Carretera federal México-Cuautla kilómetro 79<br>
        Nepantla de Sor Juana Inés, Estado de México</p>
-    <p style="margin:8px 0;">Correo electrónico: 
+    <p>✉️ Correo electrónico: 
        <a href="mailto:brcarrocerias@gmail.com" style="color:#ffcc00; text-decoration:none;">brcarrocerias@gmail.com</a>
     </p>
-    <p style="margin:8px 0;">Celular: 
+    <p>📞 Celular: 
        <a href="tel:5649335426" style="color:#ffcc00; text-decoration:none;">5649335426</a>
     </p>
-  </div>
-</footer>
-
+    <p style="margin-top:20px;">© 2026 Carrocerías Norman Badillo</p>
+  </footer>
 
   <!-- BOTÓN DE COTIZACIÓN -->
   <a href="#contacto" class="btn-cotizacion">
