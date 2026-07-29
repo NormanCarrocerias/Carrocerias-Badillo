@@ -5,16 +5,7 @@ body {
   padding: 0;
 }
 
-@media (max-width: 768px) {
-  h1, h2 {
-    font-size: 1.5rem;
-  }
-  .portafolio-container {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ===== HEADER ===== */
+/* ===== HERO ===== */
 .hero {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
               url("imagenes/fondo.jpg") no-repeat center center;
@@ -22,6 +13,28 @@ body {
   color: #fff;
   padding: 80px 20px;
   text-align: center;
+}
+
+/* ===== TYPEWRITER EFFECT ===== */
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 3px solid #ffcc00; /* cursor */
+  white-space: nowrap;
+  animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: #ffcc00; }
 }
 
 /* ===== NAVBAR ===== */
@@ -58,40 +71,7 @@ body {
   transition: color 0.3s ease;
 }
 
-.nav-menu a:hover {
-  color: #ffcc00;
-}
-
-/* ===== MENU HAMBURGUESA ===== */
-.menu-btn {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.menu-icon {
-  position: relative;
-  width: 28px;
-  height: 3px;
-  background: #fff;
-  border-radius: 3px;
-  display: block;
-}
-
-.menu-icon::before,
-.menu-icon::after {
-  content: "";
-  position: absolute;
-  width: 28px;
-  height: 3px;
-  background: #fff;
-  border-radius: 3px;
-  left: 0;
-}
-
-.menu-icon::before { top: -8px; }
-.menu-icon::after { top: 8px; }
+.nav-menu a:hover { color: #ffcc00; }
 
 /* ===== SECTIONS ===== */
 .section {
@@ -222,44 +202,3 @@ button:hover { background-color: #ff6600; }
 #social-icons a:nth-child(2) { background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf, #4f5bd5); } /* Instagram */
 #social-icons a:nth-child(3) { background-color: #ff0000; } /* YouTube */
 
-/* ===== RESPONSIVE FOOTER ===== */
-@media (max-width: 600px) {
-  #social-icons { gap: 15px; }
-  #social-icons a {
-    width: 50px;
-    height: 50px;
-    font-size: 1.4rem;
-  }
-  .footer p { font-size: 0.9rem; }
-}
-/* ===== HERO BACKGROUND ===== */
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url("imagenes/fondo.jpg") no-repeat center center;
-  background-size: cover;
-  color: #fff;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-/* ===== TYPEWRITER EFFECT ===== */
-.typewriter {
-  display: inline-block;
-  overflow: hidden;
-  border-right: 3px solid #ffcc00; /* cursor */
-  white-space: nowrap;
-  animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #ffcc00;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink {
-  from, to { border-color: transparent }
-  50% { border-color: #ffcc00; }
-}
