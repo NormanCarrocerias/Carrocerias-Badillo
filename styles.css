@@ -49,17 +49,18 @@ body {
 
 /* ===== HERO ===== */
 .hero {
-  min-height:100vh;   /* Hace que el fondo cubra toda la altura de la pantalla */
-  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-             url("imagenes/fondo.png") center/cover no-repeat;
-  color:#fff;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  padding:20px;
+  min-height: 100vh; /* ocupa toda la altura de la ventana */
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("imagenes/fondo.png") center/cover no-repeat;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
+
 
 /* ===== HERO ===== */
 .hero {
