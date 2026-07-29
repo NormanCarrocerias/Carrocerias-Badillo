@@ -2,51 +2,130 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Carrocerías Badillo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrocerías Norman Badillo</title>
+
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Tu hoja de estilos -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <div class="navbar">
-    <h2>Carrocerías Badillo</h2>
-  </div>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Carrocerías Norman Badillo</div>
+      <ul class="nav-menu">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#portafolio">Trabajos</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- HERO -->
   <section class="hero">
-    <h1 class="typewriter">Bienvenido a Carrocerías Badillo</h1>
+    <div class="hero-content">
+      <h1 class="typewriter">Carrocerías Norman Badillo</h1>
+      <p class="slogan">Tu auto en manos expertas</p>
+    </div>
   </section>
 
-  <!-- SECTIONS -->
-  <section class="section">
+  <!-- SECCIÓN SERVICIOS -->
+  <section id="servicios" class="section">
     <h2>Servicios</h2>
-    <div class="card">Carrocerías personalizadas</div>
-    <div class="card">Reparaciones</div>
-    <div class="card">Pintura</div>
+    <div class="cards-container">
+      <div class="card">
+        <img src="imagenes/servicio1.jpeg" alt="Servicio 1">
+        <h3>Pintura Automotriz</h3>
+        <p>Acabados profesionales y duraderos.</p>
+      </div>
+      <div class="card">
+        <img src="imagenes/servicio2.jpeg" alt="Servicio 2">
+        <h3>Reparación de Carrocería</h3>
+        <p>Soluciones rápidas y efectivas.</p>
+      </div>
+    </div>
   </section>
 
-  <section class="section">
-    <h2>Contacto</h2>
-    <form>
-      <input type="text" placeholder="Nombre"><br><br>
-      <input type="email" placeholder="Correo"><br><br>
-      <textarea placeholder="Mensaje"></textarea><br><br>
-      <button type="submit">Enviar</button>
+  <!-- SECCIÓN PORTAFOLIO -->
+  <section id="portafolio" class="section">
+    <h2>Trabajos Realizados</h2>
+    <div class="portfolio">
+      <img src="imagenes/WI1.jpeg" alt="Trabajo 1">
+      <img src="imagenes/WI2.jpeg" alt="Trabajo 2">
+      <img src="imagenes/WI3.jpeg" alt="Trabajo 3">
+    </div>
+  </section>
+
+  <!-- SECCIÓN TESTIMONIOS -->
+  <section id="testimonios" class="section">
+    <h2>Testimonios</h2>
+    <div class="testimonio">
+      <p>"El servicio fue excelente, mi carro quedó como nuevo."</p>
+      <h4>- Juan Pérez</h4>
+    </div>
+    <div class="testimonio">
+      <p>"Muy profesionales y atentos, recomiendo totalmente sus carrocerías."</p>
+      <h4>- María López</h4>
+    </div>
+    <div class="testimonio">
+      <p>"La calidad del trabajo es impecable, volveré sin duda."</p>
+      <h4>- Carlos Ramírez</h4>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CONTACTO -->
+  <section id="contacto" class="section">
+    <h2>Contáctanos</h2>
+    <form class="form" action="https://formspree.io/f/xykrgjzk" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+      <div class="form-buttons">
+        <button type="submit">Enviar</button>
+        <button type="reset" class="reset">Limpiar</button>
+      </div>
     </form>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2026 Carrocerías Badillo</p>
-    <div class="social-icons">
-      <a href="#"><img src="imagenes/instagram.png" alt="Instagram"></a>
-      <a href="#"><img src="imagenes/facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="imagenes/twitter.png" alt="Twitter"></a>
+  <footer class="footer">
+    <h2>
+      BR Carrocerías 
+      <img src="imagenes/logo.png" alt="Logo BR Carrocerías" style="height:40px; vertical-align:middle; margin-left:10px;">
+    </h2>
+    <p>Fabricación y reparación de todo tipo de carrocerías en general</p>
+    <p>📍 Carretera federal México-Cuautla kilómetro 79<br>
+       Nepantla de Sor Juana Inés, Estado de México</p>
+    <p>✉️ Correo electrónico: 
+       <a href="mailto:brcarrocerias@gmail.com">brcarrocerias@gmail.com</a>
+    </p>
+    <p>📞 Celular: 
+       <a href="tel:5649335426">5649335426</a>
+    </p>
+    <p>© 2026 Carrocerías Norman Badillo</p>
+
+    <div id="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
     </div>
   </footer>
+
+  <!-- BOTÓN DE COTIZACIÓN -->
+  <a href="#contacto" class="btn-cotizacion">
+    <img src="imagenes/cotizacion.png" alt="Cotización" width="50">
+  </a>
+
+  <!-- BOTÓN DE WHATSAPP BUSINESS -->
+  <a href="https://wa.me/5215512345678" class="btn-whatsapp" target="_blank">
+    <img src="imagenes/whatsapp.png" alt="WhatsApp" width="50">
+  </a>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-}
