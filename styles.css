@@ -1,28 +1,102 @@
 /* ===== GENERAL ===== */
 body { font-family: 'Montserrat', sans-serif; }
 
-/* ===== NAVBAR ===== */
-.navbar {
-  background-color: #004a99;
-  padding: 15px 20px;
-  position: sticky;
-  top: 0;
+/* ===== BOTONES ===== */
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #004a99, #002d66);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+button:hover {
+  background: linear-gradient(90deg, #ffcc00, #e6b800);
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* Botón de reset diferenciado */
+button.reset {
+  background: #999;
   color: #fff;
 }
+button.reset:hover {
+  background: #666;
+  transform: translateY(-2px);
+}
+
+/* ===== FORMULARIOS ===== */
+.form input, .form textarea {
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form input:focus, .form textarea:focus {
+  border-color: #004a99;
+  box-shadow: 0 0 6px rgba(0,74,153,0.5);
+  outline: none;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+/* ===== NAVBAR PROFESIONAL ===== */
+.navbar {
+  background: linear-gradient(90deg, #004a99 0%, #002d66 100%);
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #ffcc00;
+  letter-spacing: 1px;
+}
+
 .nav-menu {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
+
 .nav-menu li a {
   color: #fff;
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 3px;
 }
+
+.nav-menu li a:hover {
+  color: #ffcc00;
+  border-bottom: 2px solid #ffcc00;
+}
+
 /* ===== FOOTER ===== */
 .footer {
   background:#222;
@@ -56,21 +130,35 @@ body { font-family: 'Montserrat', sans-serif; }
   text-align: center;
   padding: 20px;
 }
-
-
-/* ===== HERO ===== */
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("imagenes/fondo.png") no-repeat center center;
-  background-size: cover;
-  color: #fff;
-  padding: 80px 20px;
-  text-align: center;
-}
 .hero .slogan {
   font-size: 1.2em;
   margin-top: 10px;
 }
+
+/* ===== CARDS ===== */
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ===== FORM ===== */
+.form input, .form textarea {
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
 
 /* ===== TYPEWRITER EFFECT ===== */
 .typewriter {
