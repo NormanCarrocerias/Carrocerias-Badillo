@@ -8,12 +8,14 @@ footer {
   margin-top: 40px;
 }
 
+/* Contenedor de íconos sociales */
 #social-icons {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content: center;   /* 🔹 Centra horizontalmente */
+  align-items: center;       /* 🔹 Centra verticalmente */
+  gap: 20px;                 /* 🔹 Espaciado uniforme */
   margin-bottom: 20px;
-  flex-wrap: wrap; /* permite que los íconos bajen en móviles */
+  flex-wrap: wrap;           /* 🔹 Permite que bajen en móviles */
 }
 
 #social-icons a {
@@ -42,7 +44,7 @@ footer p {
   }
 
   #social-icons a {
-    font-size: 1.8rem; /* íconos más grandes en móvil */
+    font-size: 1.8rem;
   }
 
   footer p {
