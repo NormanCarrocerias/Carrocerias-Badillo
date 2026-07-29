@@ -5,6 +5,29 @@ body {
   padding: 0;
 }
 
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: #004a99;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  color: #fff;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
 /* ===== HERO ===== */
 .hero {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
@@ -14,36 +37,29 @@ body {
   padding: 80px 20px;
   text-align: center;
 }
+.hero .slogan {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
 
 /* ===== TYPEWRITER EFFECT ===== */
 .typewriter {
   display: inline-block;
   overflow: hidden;
-  border-right: 3px solid #ffcc00; /* cursor */
+  border-right: 3px solid #ffcc00;
   white-space: nowrap;
   animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
   font-size: 2.5em;
   font-weight: bold;
   color: #ffcc00;
 }
-
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
-
 @keyframes blink {
   from, to { border-color: transparent }
   50% { border-color: #ffcc00; }
-}
-
-/* ===== NAVBAR ===== */
-.navbar {
-  background-color: #004a99;
-  padding: 15px 20px;
-  position: sticky;
-  top: 0;
-  color: #fff;
 }
 
 /* ===== SECTIONS ===== */
@@ -51,30 +67,46 @@ body {
   padding: 40px 20px;
   text-align: center;
 }
-
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 .card {
   border: 1px solid #ddd;
   padding: 20px;
-  margin: 15px;
   border-radius: 8px;
-  display: inline-block;
   width: 250px;
 }
-
-/* ===== FOOTER ===== */
-footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
+.card img {
+  width: 100%;
+  border-radius: 8px;
 }
 
-footer .social-icons {
-  margin-top: 10px;
+/* ===== PORTAFOLIO ===== */
+.portfolio {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.portfolio img {
+  width: 200px;
+  border-radius: 8px;
 }
 
-footer .social-icons img {
-  width: 30px;
-  margin: 0 8px;
-  vertical-align: middle;
+/* ===== TESTIMONIOS ===== */
+.testimonio {
+  margin: 20px auto;
+  max-width: 600px;
+  font-style: italic;
 }
+
+/* ===== FORM ===== */
+.form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.form input, .form textarea {
+  margin: 10px 
