@@ -1,142 +1,80 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carrocerías Norman Badillo</title>
+/* ===== GENERAL ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  <!-- Font Awesome para íconos -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("imagenes/fondo.png") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
 
-  <!-- Tu hoja de estilos -->
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+/* ===== TYPEWRITER EFFECT ===== */
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 3px solid #ffcc00; /* cursor */
+  white-space: nowrap;
+  animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #ffcc00;
+}
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="logo">Carrocerías Norman Badillo</div>
-      <ul class="nav-menu">
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#portafolio">Trabajos</a></li>
-        <li><a href="#testimonios">Testimonios</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-      <button class="menu-btn"><span class="menu-icon"></span></button>
-    </div>
-  </nav>
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1 class="typewriter">Carrocerías Norman Badillo</h1>
-      <p class="slogan">Tu auto en manos expertas</p>
-    </div>
-  </section>
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: #ffcc00; }
+}
 
-  <!-- SECCIÓN SERVICIOS -->
-  <section id="servicios" class="section">
-    <h2>Servicios</h2>
-    <div class="cards-container">
-      <div class="card">
-        <img src="imagenes/servicio1.jpeg" alt="Servicio 1">
-        <h3>Pintura Automotriz</h3>
-        <p>Acabados profesionales y duraderos.</p>
-      </div>
-      <div class="card">
-        <img src="imagenes/servicio2.jpeg" alt="Servicio 2">
-        <h3>Reparación de Carrocería</h3>
-        <p>Soluciones rápidas y efectivas.</p>
-      </div>
-    </div>
-  </section>
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: #004a99;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  color: #fff;
+}
 
-  <!-- SECCIÓN PORTAFOLIO -->
-  <section id="portafolio" class="section">
-    <h2>Trabajos Realizados</h2>
-    <div class="portfolio">
-      <img src="imagenes/WI1.jpeg" alt="Trabajo 1">
-      <img src="imagenes/WI2.jpeg" alt="Trabajo 2">
-      <img src="imagenes/WI3.jpeg" alt="Trabajo 3">
-    </div>
-  </section>
+/* ===== SECTIONS ===== */
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
 
-  <!-- SECCIÓN TESTIMONIOS -->
-  <section id="testimonios">
-    <h2>Testimonios</h2>
-    <div class="testimonio">
-      <p>"El servicio fue excelente, mi carro quedó como nuevo."</p>
-      <h4>- Juan Pérez</h4>
-    </div>
-    <div class="testimonio">
-      <p>"Muy profesionales y atentos, recomiendo totalmente sus carrocerías."</p>
-      <h4>- María López</h4>
-    </div>
-    <div class="testimonio">
-      <p>"La calidad del trabajo es impecable, volveré sin duda."</p>
-      <h4>- Carlos Ramírez</h4>
-    </div>
-  </section>
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 8px;
+  display: inline-block;
+  width: 250px;
+}
 
-  <!-- SECCIÓN CONTACTO -->
-  <section id="contacto" class="section">
-    <h2>Contáctanos</h2>
-    <form class="form" action="https://formspree.io/f/xykrgjzk" method="POST">
-      <input type="text" name="nombre" placeholder="Tu nombre" required>
-      <input type="email" name="email" placeholder="Tu correo" required>
-      <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-      <div class="form-buttons">
-        <button type="submit">Enviar</button>
-        <button type="reset" class="reset">Limpiar</button>
-      </div>
-    </form>
-  </section>
+/* ===== FOOTER ===== */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <h2>
-      BR Carrocerías 
-      <img src="imagenes/logo.png" alt="Logo BR Carrocerías" style="height:40px; vertical-align:middle; margin-left:10px;">
-    </h2>
-    <p>Fabricación y reparación de todo tipo de carrocerías en general</p>
-    <p>📍 Carretera federal México-Cuautla kilómetro 79<br>
-       Nepantla de Sor Juana Inés, Estado de México</p>
-    <p>✉️ Correo electrónico: 
-       <a href="mailto:brcarrocerias@gmail.com">brcarrocerias@gmail.com</a>
-    </p>
-    <p>📞 Celular: 
-       <a href="tel:5649335426">5649335426</a>
-    </p>
-    <p>© 2026 Carrocerías Norman Badillo</p>
+footer .social-icons {
+  margin-top: 10px;
+}
 
-    <div id="social-icons">
-      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-    </div>
-  </footer>
-
-  <!-- BOTÓN DE COTIZACIÓN -->
-  <a href="#contacto" class="btn-cotizacion">
-    <img src="imagenes/cotizacion.png" alt="Cotización" width="50">
-  </a>
-
-  <!-- BOTÓN DE WHATSAPP BUSINESS -->
-  <a href="https://wa.me/5215512345678" class="btn-whatsapp" target="_blank">
-    <img src="imagenes/whatsapp.png" alt="WhatsApp" width="50">
-  </a>
-
-  <!-- SCRIPT PARA FONDO ALEATORIO -->
-  <script>
-    const fondos = [
-      "imagenes/taller.jpg",
-      "imagenes/fondo-minimalista.jpg"
-    ];
-    const fondoAleatorio = fondos[Math.floor(Math.random() * fondos.length)];
-    document.querySelector(".hero").style.background = 
-      `url(${fondoAleatorio}) no-repeat center center/cover`;
-  </script>
-
-</body>
-</html>
+footer .social-icons img {
+  width: 30px;
+  margin: 0 8px;
+  vertical-align: middle;
+}
