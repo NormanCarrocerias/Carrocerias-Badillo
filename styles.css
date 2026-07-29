@@ -232,3 +232,34 @@ button:hover { background-color: #ff6600; }
   }
   .footer p { font-size: 0.9rem; }
 }
+/* ===== HERO BACKGROUND ===== */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("imagenes/fondo.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* ===== TYPEWRITER EFFECT ===== */
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 3px solid #ffcc00; /* cursor */
+  white-space: nowrap;
+  animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: #ffcc00; }
+}
