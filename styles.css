@@ -8,7 +8,7 @@ body {
 /* ===== HERO ===== */
 .hero {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url("imagenes/fondo.png") no-repeat center center;
+    url("fondo-minimalista.jpg.png") no-repeat center center;
   background-size: cover;
   color: #fff;
   padding: 80px 20px;
