@@ -27,6 +27,39 @@ body {
   color: #fff;
   text-decoration: none;
 }
+/* ===== FOOTER ===== */
+.footer {
+  background:#222;
+  color:#fff;
+  text-align:center;   /* Centra todo el contenido */
+  padding:20px;
+}
+
+#social-icons {
+  display:flex;
+  justify-content:center;  /* Centra los íconos */
+  gap:15px;
+  margin-top:10px;
+}
+
+#social-icons a {
+  color:#fff;
+  font-size:20px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  min-height:100vh;   /* Hace que el fondo cubra toda la altura de la pantalla */
+  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+             url("imagenes/fondo.png") center/cover no-repeat;
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
 
 /* ===== HERO ===== */
 .hero {
